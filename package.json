@@ -64,6 +64,17 @@
     "typescript": "^5.9.3",
     "vitest": "^2.1.9"
   },
+  "quartz": {
+    "name": "explicit-publish",
+    "displayName": "Explicit Publish",
+    "category": "filter",
+    "version": "1.0.0",
+    "quartzVersion": ">=5.0.0",
+    "dependencies": [],
+    "defaultOrder": 50,
+    "defaultEnabled": false,
+    "defaultOptions": {}
+  },
   "engines": {
     "node": ">=22",
     "npm": ">=10.9.2"
