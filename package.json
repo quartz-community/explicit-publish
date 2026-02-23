@@ -51,7 +51,9 @@
     }
   },
   "dependencies": {
-    "@quartz-community/types": "github:quartz-community/types"
+    "@quartz-community/types": "github:quartz-community/types",
+    "tsup": "^8.5.0",
+    "typescript": "^5.9.3"
   },
   "devDependencies": {
     "@types/node": "^24.10.0",
@@ -60,8 +62,6 @@
     "eslint": "^8.57.0",
     "eslint-config-prettier": "^9.1.0",
     "prettier": "^3.6.2",
-    "tsup": "^8.5.0",
-    "typescript": "^5.9.3",
     "vitest": "^2.1.9"
   },
   "quartz": {
