@@ -10,15 +10,10 @@ npx quartz plugin add github:quartz-community/explicit-publish
 
 ## Usage
 
-```ts
-// quartz.config.ts
-import * as ExternalPlugin from "./.quartz/plugins";
-
-const config: QuartzConfig = {
-  plugins: {
-    filters: [ExternalPlugin.ExplicitPublish()],
-  },
-};
+```yaml title="quartz.config.yaml"
+plugins:
+  - source: github:quartz-community/explicit-publish
+    enabled: true
 ```
 
 ## Configuration
@@ -27,7 +22,7 @@ This plugin has no configuration options.
 
 ## Documentation
 
-See the [Quartz documentation](https://quartz.jzhao.xyz/) for more information.
+See the [Quartz documentation](https://quartz.jzhao.xyz/plugins/ExplicitPublish) for more information.
 
 ## License
 
