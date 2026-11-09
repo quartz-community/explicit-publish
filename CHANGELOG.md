@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.1.0
+
+### Minor Changes
+
+- 0053681: Files without frontmatter — `.base`, `.canvas` and `.excalidraw` pages — are published when a published page links to them, and not otherwise (quartz-community/bases-page#11). Before, every such file was published regardless of this filter. Needs Quartz 5.1, which runs the filters on these pages; with older Quartz nothing changes.
+
 ## 1.0.1
 
 ### Patch Changes
