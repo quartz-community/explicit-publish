@@ -1,18 +1,20 @@
 # @quartz-community/explicit-publish
 
-Only publishes pages that have publish: true in their frontmatter.
+Only publishes pages that have `publish: true` in their frontmatter.
 
 ## Installation
 
 ```bash
-npx quartz plugin add github:quartz-community/explicit-publish
+npx quartz plugin add @quartz-community/explicit-publish
 ```
+
+The default `quartz.config.yaml` already lists this plugin, disabled. Set `enabled: true` to turn it on.
 
 ## Usage
 
 ```yaml title="quartz.config.yaml"
 plugins:
-  - source: github:quartz-community/explicit-publish
+  - source: "@quartz-community/explicit-publish"
     enabled: true
 ```
 
@@ -27,6 +29,10 @@ nothing references, is not published. A base embedded in a published note (`![[V
 
 A drawing stored as Markdown (`.excalidraw.md`) has frontmatter, and follows its own `publish:`
 like a note. This needs Quartz 5.1 or later, which runs the filters on these pages.
+
+Images and other files are copied to your site whether or not a published page uses them. Set
+`configuration.publishAssets: referenced` to only publish the files that published pages link to or
+embed.
 
 ## Configuration
 
